@@ -24,6 +24,7 @@ const SocialNetworkSection = () => {
           href={socialNetwork.link}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={socialNetwork.name}
           className="hover:scale-110 transition-transform"
         >
           <Logo logo={socialNetwork.logo} key={socialNetwork.name} />
