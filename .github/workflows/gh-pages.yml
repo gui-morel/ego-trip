@@ -34,13 +34,10 @@ jobs:
         shell: bash
       - run: npx vite build
         shell: bash
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+        with:
+          path: dist
 
   # Deployment job
   deploy:
