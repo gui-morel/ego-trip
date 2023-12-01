@@ -7,10 +7,8 @@ import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
 import tsConfigPaths from 'vite-tsconfig-paths';
 
-import PROJECT_BASE from './src/PROJECT_BASE';
-
 export default defineConfig({
-  base: PROJECT_BASE,
+  base: '/ego-trip/',
   plugins: [
     million.vite({ auto: true }),
     react(),
