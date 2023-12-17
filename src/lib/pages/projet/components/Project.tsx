@@ -1,16 +1,25 @@
-import { FrownIcon } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from "lucide-react";
+
+
 
 const Project = () => {
   return (
-    <div className="grid justify-center gap-2.5">
-      <h1 className="bg-gradient-to-br from-gray-500 to-teal-700 bg-clip-text text-2xl md:text-3xl font-bold text-transparent">
-        Guillaume Morel
-      </h1>
-      <div className="grid grid-cols-1 justify-items-center gap-2.5 mt-3">
-        <FrownIcon className="hover:animate-bounce" />
-        <p>Mince, il n&apos;y a rien pour le moment.</p>
-      </div>
-    </div>
+    <ul className="flex flex-col space-y-1">
+      <li className="flex flex-row justify-between">
+        <ArrowRight className="animate-pulse" />
+        <a href="/home-loan" target="_blank" rel="noopener" className="hover:underline">
+          Petite calculatrice de prêt immobilier et portefeuille
+        </a>
+        <ArrowLeft className="animate-pulse" />
+      </li>
+      <li className="flex flex-row justify-between">
+        <ArrowRight className="animate-pulse" />
+        <a href="https://github.com/gui-morel/adventofcode-2023" target="_blank" rel="noopener" className="hover:underline">
+          Advent of code 2023 en Kotlin [En cours]
+        </a>
+        <ArrowLeft className="animate-pulse" />
+      </li>
+    </ul>
   );
 };
 
